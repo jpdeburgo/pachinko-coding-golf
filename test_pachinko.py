@@ -30,3 +30,12 @@ def test_pipe_at_start():
     
 def test_pipe_at_end():
     assert eval_pachinko(TEST_CASES.Test_08) == TEST_CASES.Percentage08
+    
+def test_pipe_middle():
+    assert eval_pachinko(TEST_CASES.Test_09) == TEST_CASES.Percentage09
+    
+def test_010():
+    assert eval_pachinko(TEST_CASES.Test_010) == TEST_CASES.Percentage010
+
+def test_1():
+    assert eval_pachinko(TEST_CASES.Test_1) == TEST_CASES.Percentage1
