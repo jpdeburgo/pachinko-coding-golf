@@ -18,3 +18,15 @@ def test_mountain_at_start():
 
 def test_mountain_at_end():
     assert eval_pachinko(TEST_CASES.Test_04) == TEST_CASES.Percentage04
+
+def test_mountain_only():
+    assert eval_pachinko(TEST_CASES.Test_05) == TEST_CASES.Percentage05
+    
+def test_pipe_only():
+    assert eval_pachinko(TEST_CASES.Test_06) == TEST_CASES.Percentage06
+    
+def test_pipe_at_start():
+    assert eval_pachinko(TEST_CASES.Test_07) == TEST_CASES.Percentage07
+    
+def test_pipe_at_end():
+    assert eval_pachinko(TEST_CASES.Test_08) == TEST_CASES.Percentage08
