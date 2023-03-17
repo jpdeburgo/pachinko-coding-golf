@@ -1,8 +1,5 @@
 import TEST_CASES
-from pachinko import eval_pachinko
-
-def test_empty():
-    assert eval_pachinko(TEST_CASES.Test_000) == TEST_CASES.Percentage000
+from pachinko import e as eval_pachinko
 
 def test_hole():
     assert eval_pachinko(TEST_CASES.Test_00) == TEST_CASES.Percentage00
@@ -37,5 +34,14 @@ def test_pipe_middle():
 def test_010():
     assert eval_pachinko(TEST_CASES.Test_010) == TEST_CASES.Percentage010
 
+def test_mountain_roll_left():
+    assert eval_pachinko(TEST_CASES.Test_011) == TEST_CASES.Percentage011
+
 def test_1():
     assert eval_pachinko(TEST_CASES.Test_1) == TEST_CASES.Percentage1
+
+def test_2():
+    assert eval_pachinko(TEST_CASES.Test_2) == TEST_CASES.Percentage2
+
+def test_3():
+    assert eval_pachinko(TEST_CASES.Test_3) == TEST_CASES.Percentage3
